@@ -831,3 +831,21 @@ h2{font-size:clamp(36px,4.8vw,68px)}
     height:330px;
   }
 }
+/* Remove mobile gallery backing/borders: images fill cards */
+@media (max-width:900px){
+  .gallery-grid figure,
+  .gallery-grid figure.large{
+    padding:0;
+    background:transparent;
+    border:0;
+  }
+  .gallery-grid figure img,
+  .gallery-grid figure.large img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:inherit;
+  }
+}
