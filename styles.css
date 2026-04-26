@@ -849,3 +849,46 @@ h2{font-size:clamp(36px,4.8vw,68px)}
     border-radius:inherit;
   }
 }
+/* Nature proof directly below intro story */
+.story-with-nature{
+  grid-template-columns:1.05fr .95fr;
+  row-gap:44px;
+}
+.nature-strip{
+  grid-column:1 / -1;
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding:4px 2px 18px;
+}
+.nature-strip img{
+  flex:0 0 min(72%, 760px);
+  height:430px;
+  border-radius:28px;
+  object-fit:cover;
+  scroll-snap-align:start;
+  box-shadow:0 18px 46px rgba(47,42,34,.12);
+}
+.nature-strip img:nth-child(2){flex-basis:min(54%, 560px)}
+.nature-strip img:nth-child(3){flex-basis:min(62%, 640px)}
+@media (max-width:900px){
+  .story-with-nature{display:grid;grid-template-columns:1fr;row-gap:30px}
+  .nature-strip{margin-inline:-16px;padding-inline:16px;gap:14px}
+  .nature-strip img,
+  .nature-strip img:nth-child(2),
+  .nature-strip img:nth-child(3){
+    flex-basis:84%;
+    height:310px;
+    border-radius:26px;
+  }
+}
+@media (max-width:520px){
+  .nature-strip img,
+  .nature-strip img:nth-child(2),
+  .nature-strip img:nth-child(3){
+    height:285px;
+    flex-basis:86%;
+  }
+}
