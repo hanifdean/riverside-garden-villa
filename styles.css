@@ -998,3 +998,33 @@ h2{font-size:clamp(36px,4.8vw,68px)}
   .lightbox-image{max-height:78dvh;border-radius:18px}
   .lightbox-close{top:12px;right:12px;width:42px;height:42px}
 }
+.lightbox-nav{
+  position:fixed;
+  top:50%;
+  transform:translateY(-50%);
+  width:52px;
+  height:52px;
+  border:1px solid rgba(244,235,221,.34);
+  border-radius:999px;
+  background:rgba(244,235,221,.14);
+  color:var(--cream);
+  font-size:44px;
+  line-height:.8;
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+}
+.lightbox-prev{left:18px}
+.lightbox-next{right:18px}
+.lightbox-nav[hidden]{display:none}
+@media (max-width:520px){
+  .lightbox-nav{
+    top:auto;
+    bottom:56px;
+    transform:none;
+    width:46px;
+    height:46px;
+    font-size:38px;
+  }
+  .lightbox-prev{left:18px}
+  .lightbox-next{right:18px}
+}
