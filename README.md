@@ -51,5 +51,5 @@ vercel deploy --prod
 The WhatsApp reservation CTA currently points to:
 
 ```text
-+62 813-1113-5736
++62 878-7373-4000
 ```

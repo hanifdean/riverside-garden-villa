@@ -106,4 +106,4 @@ Primary:
 
 - Main site: https://riverside-garden-villa.vercel.app
 - IG links page: https://riverside-garden-villa.vercel.app/links
-- WhatsApp reservation: +62 813-1113-5736
+- WhatsApp reservation: +62 878-7373-4000
