@@ -441,3 +441,28 @@ h2{font-size:clamp(36px,4.8vw,68px)}
   .section-pad{padding:54px 16px}
   .split img{height:310px}.hero-image-panel{min-height:300px}
 }
+.side-scroll{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding:4px 4px 18px;
+}
+.side-scroll img{
+  flex:0 0 min(86%, 620px);
+  height:620px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  scroll-snap-align:start;
+}
+.feature-scroll{
+  min-width:0;
+}
+@media (max-width:900px){
+  .side-scroll{margin-inline:-16px;padding-inline:16px;gap:12px}
+  .side-scroll img{flex-basis:88%;height:360px;border-radius:24px}
+}
+@media (max-width:520px){
+  .side-scroll img{height:310px;flex-basis:88%}
+}
