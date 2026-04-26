@@ -648,3 +648,19 @@ h2{font-size:clamp(36px,4.8vw,68px)}
   color:var(--cream);
 }
 .whatsapp-link span{opacity:.82}
+/* Links CTA color hierarchy */
+.link-list .primary-link{
+  background:var(--moss);
+  border-color:var(--moss);
+  box-shadow:0 14px 34px rgba(111,128,97,.18);
+}
+.link-list .primary-link strong,
+.link-list .primary-link span{
+  color:var(--cream);
+}
+.link-list .primary-link span{opacity:.84}
+.whatsapp-link{
+  background:var(--green);
+  border-color:var(--green);
+  box-shadow:0 18px 42px rgba(47,74,53,.24);
+}
