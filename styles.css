@@ -677,3 +677,16 @@ h2{font-size:clamp(36px,4.8vw,68px)}
     flex-basis:82%;
   }
 }
+.ig-handle{
+  display:inline-flex;
+  margin-top:14px;
+  color:var(--moss);
+  font-weight:800;
+  letter-spacing:.02em;
+}
+.inline-link{
+  color:var(--cream);
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
