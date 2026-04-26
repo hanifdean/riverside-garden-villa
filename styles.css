@@ -916,3 +916,24 @@ h2{font-size:clamp(36px,4.8vw,68px)}
 @media (max-width:520px){
   .mini-image-strip img{flex-basis:74%;height:175px}
 }
+/* Mobile: keep Living & Dining heading before its images */
+@media (max-width:900px){
+  .split{
+    display:flex;
+    flex-direction:column;
+  }
+  .split > .split-copy{
+    order:1;
+  }
+  .split > .feature-scroll,
+  .split > img{
+    order:2;
+  }
+  .split.reverse > .split-copy{
+    order:1;
+  }
+  .split.reverse > .feature-scroll,
+  .split.reverse > img{
+    order:2;
+  }
+}
