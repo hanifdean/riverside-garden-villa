@@ -892,3 +892,27 @@ h2{font-size:clamp(36px,4.8vw,68px)}
     flex-basis:86%;
   }
 }
+.mini-image-strip{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  margin-top:28px;
+  padding-bottom:12px;
+}
+.mini-image-strip img{
+  flex:0 0 46%;
+  height:180px;
+  border-radius:20px;
+  object-fit:cover;
+  scroll-snap-align:start;
+  box-shadow:0 12px 30px rgba(47,42,34,.10);
+}
+@media (max-width:900px){
+  .mini-image-strip{margin-inline:-16px;padding-inline:16px;gap:12px}
+  .mini-image-strip img{flex-basis:68%;height:190px;border-radius:22px}
+}
+@media (max-width:520px){
+  .mini-image-strip img{flex-basis:74%;height:175px}
+}
