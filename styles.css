@@ -619,3 +619,15 @@ h2{font-size:clamp(36px,4.8vw,68px)}
     min-height:154px;
   }
 }
+.whatsapp-link{
+  background:rgba(47,74,53,.10);
+  border:2px solid rgba(47,74,53,.34);
+}
+.whatsapp-link strong{
+  font-weight:900;
+  color:var(--green);
+}
+.whatsapp-link span{
+  font-weight:600;
+  color:rgba(42,41,37,.72);
+}
