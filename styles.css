@@ -1028,3 +1028,8 @@ h2{font-size:clamp(36px,4.8vw,68px)}
   .lightbox-prev{left:18px}
   .lightbox-next{right:18px}
 }
+
+.booking-ctas{display:flex;flex-direction:column;gap:12px;flex-shrink:0;align-items:stretch}
+.booking .airbnb-btn{border:1.5px solid rgba(244,235,221,.55);color:var(--cream);background:transparent}
+.booking .airbnb-btn:hover{background:rgba(244,235,221,.12)}
+@media (max-width:900px){.booking .booking-ctas{margin-top:24px}.booking .booking-ctas .button{margin-top:0}}
